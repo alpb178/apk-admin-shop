@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UI.Activities.FeedBackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/feedback_layout_inner"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/feedback_presentation_text"
+            android:id="@+id/lblFeedbackHeaderTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbxFeedbackTheme"
+            android:layout_below="@+id/lblFeedbackHeaderTitle"
+            android:layout_marginTop="@dimen/margin_10"
+            android:padding="@dimen/margin_12" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtFeedbackBody"
+            android:layout_below="@+id/cbxFeedbackTheme"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:lines="10"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="@dimen/margin_10"
+            android:padding="@dimen/margin_12"
+            android:hint="@string/feedback_comment_hint"
+            android:gravity="top"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edtFeedbackEmail"
+            android:layout_below="@+id/txtFeedbackBody"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/feedback_identification"
+            android:padding="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/feedback_regardless"
+            android:id="@+id/lblFeedbackRegardless"
+            android:layout_below="@+id/edtFeedbackEmail"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

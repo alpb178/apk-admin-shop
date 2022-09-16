@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingRight="@dimen/margin_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_8">
+
+        <ImageView
+            android:id="@+id/img_stats_player_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="@dimen/margin_4"
+            android:scaleType="centerInside"
+            android:src="@drawable/player_no_photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_name"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Jugador"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_8"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="@color/md_grey_400"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/lbl_stats_player_name"
+                    android:layout_alignBottom="@+id/lbl_stats_player_name"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_toEndOf="@+id/lbl_stats_player_name"
+                    android:layout_toRightOf="@+id/lbl_stats_player_name"
+                    android:text=" (Equipo)"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutStatsNormalHitter"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="8">
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_average"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_hits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_hits"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_runs"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_runsimpulsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_runsimpulsed"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_homeruns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_homeruns"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_obp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_obp"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_ops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_ops"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_ballkk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_ballkk"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutStatsSpecialHitter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_special_cpr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_cpr"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_special_ccr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_ccr"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_special_babip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_babip"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_special_db"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_db"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lbl_stats_player_special_bbcb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/label_bbcb"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_200"/>
+
+</LinearLayout>

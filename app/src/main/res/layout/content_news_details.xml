@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_news_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cu.entumovil.snb.ui.activities.NewsDetailsActivity"
+    tools:showIn="@layout/activity_news_details">
+
+   <ProgressBar android:id="@+id/spinnerProgressBar"
+        style="@style/SpinnerProgressBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:indeterminate="false"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/margin_16"
+       android:alpha=".5"/>
+    <ImageView
+        android:id="@+id/img_news_card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:tint="@color/md_grey_200"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_default_news"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <TextView android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_16"/>
+            <TextView android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

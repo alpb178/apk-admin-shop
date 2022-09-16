@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_news_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:tint="@color/md_grey_200"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/img_default_news"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_news_resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_below="@id/img_news_card"
+            android:layout_marginBottom="@dimen/margin_4">
+            <TextView
+                android:id="@+id/txt_news_resumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El resumen de una noticia de pelota..."
+                android:maxLines="3"
+                android:textColor="@color/md_grey_800"
+                android:padding="@dimen/margin_8"
+                android:textStyle="bold"
+                android:layout_weight="3"/>
+            <ImageView
+                android:id="@+id/img_news_read_off"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_bookmark"
+                android:tint="@color/md_grey_600"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/margin_8">
+
+            <TextView
+                android:id="@+id/txt_news_cropbody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

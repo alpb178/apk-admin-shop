@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="cu.entumovil.snb.ui.activities.LifetimeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/lifeTabs"
+            android:layout_width="match_parent"
+            android:background="@color/md_orange_deep_400"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/md_orange_deep_800"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="#ffcc80"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabMode="fixed"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabGravity="fill"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/lifeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

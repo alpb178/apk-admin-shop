@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">AlexGold-Cliente</string>
+    <string name="HOST">http://sn.inder.gob.cu/beisbol_isapi.dll/</string>
+    <string name="IMAGE_URL_NEWS">http://www.jit.cu/images/content/</string>
+    <string name="IMAGE_URL_HISTORY">http://www.beisbolcubano.cu/SNBeisbol/images/efemerides/</string>
+    <string name="IMAGE_URL_PALYER">http://www.beisbolcubano.cu/SNBeisbol/images/atletas/</string>
+    <string name="DEFAULT_PAGE_SIZE">50</string>
+    <string name="COUNT_ELEMENT_CACHE">15</string>
+    <string name="SUBCRIPTION_SHORT_NUMBER">8100</string>
+    <string name="SUBCRIPTION_KEYWORD">feedback snbapp</string>
+
+    <string name="app_description">La aplicación SNB entuMovil. Es una aplicación desarrollada por los Servicios entuMovil, perteneciente a la empresa Desoft.
+            \n\nEsta aplicación facilita a los aficionados al béisbol, usuarios de la telefonía móvil en Cuba, acceder de manera ágil y eficaz desde el celular a información de su interés relacionada
+            con indicadores principales de la lid beisbolera y otros datos importantes de actualidad y archivo del deporte nacional.</string>
+    <string name="app_exit_confirmation_message">¿Está seguro que desea salir?</string>
+    <string name="app_copyright_symbol">©</string>
+    <string name="app_copyright_start_year">2022</string>
+    <string name="app_copyright2">Todos los derechos reservados</string>
+    <string name="app_version_label">Versión</string>
+    <string name="app_version_name">2.0</string>
+    <string name="app_details_label">Descripción</string>
+    <string name="app_owner">entuMovil</string>
+
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+
+    <!-- Strings related to activities title -->
+    <string name="title_activity_premium">@string/menu_premiun</string>
+    <string name="title_activity_game_details">Detalles del juego</string>
+    <string name="title_activity_team">Equipo</string>
+    <string name="title_activity_news">Noticias</string>
+    <string name="title_activity_news_details">Detalles de la noticia</string>
+    <string name="title_activity_player">Jugador</string>
+    <string name="title_activity_stats_single">Estadísticas individuales</string>
+    <string name="title_activity_stats_collective">Estadísticas colectivas</string>
+    <string name="title_activity_stats_specialized">Estadísticas especializadas</string>
+    <string name="title_activity_stats_lifetime">Labor de por vida</string>
+    <string name="title_activity_history">Un día en la Historia</string>
+    <string name="title_activity_leaders">Líderes</string>
+    <string name="title_activity_record">Records SNB</string>
+    <string name="title_activity_lifetime">Labor de por vida</string>
+
+    <!-- Strings related to fragments -->
+    <string name="label_games_day_empty">No hay juegos programados</string>
+    <string name="label_tab_qualification">Posiciones</string>
+    <string name="label_tab_gameday">Juegos</string>
+    <string name="label_tab_favorites">Favoritos</string>
+    <string name="label_tab_visitor">Visitador</string>
+    <string name="label_tab_homeclub">Homeclub</string>
+    <string name="label_tab_details">Detalles</string>
+    <string name="label_tab_stats">Estadísticas</string>
+    <string name="label_tab_stats_hitting">Bateo</string>
+    <string name="label_tab_stats_pitching">Pitcheo</string>
+    <string name="label_tab_stats_fielding">Fildeo</string>
+    <string name="label_tab_record_serie">Serie</string>
+    <string name="label_tab_record_game">Juego</string>
+    <string name="label_tab_record_special">Especiales</string>
+    <string name="label_tab_stats_numbers">Numeritos</string>
+    <string name="message_games_prog">Para los Juegos Programados no existe información, para conocer mas detalles debe esperar a que el juego comience.</string>
+
+    <!-- String related to statistics -->
+    <string name="label_team">Equipo</string>
+    <string name="label_jj">JJ</string>
+    <string name="label_jg">JG</string>
+    <string name="label_jp">JP</string>
+    <string name="label_js">JS</string>
+    <string name="label_average">AVE</string>
+    <string name="label_average_op">AVE OP</string>
+    <string name="label_hits">H</string>
+    <string name="label_runs">CA</string>
+    <string name="label_runsimpulsed">CI</string>
+    <string name="label_runsallowed">CI</string>
+    <string name="label_cp">CP</string>
+    <string name="label_homeruns">HR</string>
+    <string name="label_obp">OBP</string>
+    <string name="label_ops">OPS</string>
+    <string name="label_ballkk">BB/K</string>
+    <string name="label_pcl">PCL</string>
+    <string name="label_whip">WHIP</string>
+    <string name="label_kkball">SO/BB</string>
+    <string name="label_ga">GA</string>
+    <string name="label_inn">INN</string>
+    <string name="label_o">O</string>
+    <string name="label_a">A</string>
+    <string name="label_e">E</string>
+    <string name="label_dp">DP</string>
+    <string name="label_ab">VB</string>
+    <string name="label_kk">SO</string>
+    <string name="label_ball">BB</string>
+    <string name="label_run">C</string>
+    <string name="label_team_all">Todos</string>
+    <string name="label_manager">Director</string>
+    <string name="label_cpr">CPR</string>
+    <string name="label_ccr">CCR</string>
+    <string name="label_babip">BABIP</string>
+    <string name="label_db">DB</string>
+    <string name="label_bbcb">BB CB</string>
+    <string name="label_h9">H 9</string>
+    <string name="label_bb9">BB 9</string>
+    <string name="label_so9">SO 9</string>
+    <string name="label_orderby">Ordenar por</string>
+
+    <!-- Strings for menu -->
+    <string name="menu_action_calendar">Fecha</string>
+    <string name="menu_contextual_players">Ver jugadores</string>
+    <string name="menu_contextual_favorite">Agregar a favoritos</string>
+    <string name="menu_news">Noticias</string>
+    <string name="menu_todayhistory">Efemérides</string>
+    <string name="menu_stats">Estadísticas especializadas</string>
+    <string name="menu_stats_single">Estadísticas individuales</string>
+    <string name="menu_stats_multiple">Estadísticas colectivas</string>
+    <string name="menu_fingerprint">Labor de por vida</string>
+    <string name="menu_record">Récords SNB</string>
+    <string name="menu_seat">Palco 8888</string>
+    <string name="menu_premiun">Zona Premium</string>
+    <string name="menu_help">Acerca de y Comentarios</string>
+    <string name="menu_liders">Líderes</string>
+
+    <!-- String related to premium page -->
+    <string name="txt_premium_explanation_fixed">Zona Premium le facilita acceso a  información privilegiada sobre la
+        Serie Nacional de Béisbol, un deporte rico en estadísticas y trayectoria deportiva,
+        récords y marcas… y otros esquemas y datos de igual interés para Ud.</string>
+    <string name="txt_premium_explanation_unsubscribe">Si Ud. no es miembro de nuestra exclusiva Zona Premium, es momento de suscribirse
+        por sólo 25 CUP de su saldo. Dicha suscripción le dará acceso a:</string>
+    <string name="txt_premium_explanation_stats">
+        En esta sesión podrás tener información de estadísticas especializadas conocidas como sabermetría y podrás mantenerte actualizado para cada jugador.
+    </string>
+
+    <!-- Strings general -->
+    <string name="action_add_favorite">Agregado a tus favoritos</string>
+    <string name="action_duplicate_favorite">Ya existe en tus favoritos</string>
+    <string name="action_remove_favorite">Eliminado de tus favoritos</string>
+    <string name="label_favorites_empty">No tienes favoritos</string>
+    <string name="label_no_more_data">No hay datos para mostrar</string>
+
+    <array name="teams_array">
+        <item>TODOS</item>
+        <item>ART</item>
+        <item>CAV</item>
+        <item>CFG</item>
+        <item>CMG</item>
+        <item>GRA</item>
+        <item>GTM</item>
+        <item>HOL</item>
+        <item>IJV</item>
+        <item>IND</item>
+        <item>LTU</item>
+        <item>MAY</item>
+        <item>MTZ</item>
+        <item>PRI</item>
+        <item>SCU</item>
+        <item>SSP</item>
+        <item>VCL</item>
+    </array>
+
+    <string name="snb_service_started">snb.service.iniciado</string>
+    <string name="snb_service_stopped">snb.service.detenido</string>
+    <string name="snb_service_new_version">Nueva versión</string>
+    <string name="label_reload">Recargar</string>
+
+    <!-- Network status -->
+    <string name="connection_close">No hay conexión a internet</string>
+    <string name="connection_reconnect">Esperando disponibilidad de la red</string>
+    <string name="state_service_emergency">El dispositivo solo puede realizar llamadas de emergencia</string>
+    <string name="state_service_out">Red móvil no disponible. Compruebe la disponibilidad del servicio en su dispositivo</string>
+    <string name="state_service_off">No está activa la función para el envio de mensajes. Desactive el perfil fuera de línea y vuelva a intentarlo</string>
+    <string name="state_service_ok">Servicio disponible</string>
+
+    <string name="message_not_exists_info">No existe información.</string>
+    <string name="message_not_exists_history">No existen efemérides para hoy.</string>
+    <string name="message_timeout">Tiempo de conexión agotado.</string>
+    <string name="message_unexpected_error">Ha ocurrido un error inesperado.</string>
+    <string name="message_not_exists_email">No existen cuentas de correo en su telefóno, por favor configure uno para poder suscribirse.</string>
+
+    <string name="login_username">Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="forget_password">Has olvidado la contraseña?</string>
+
+
+</resources>

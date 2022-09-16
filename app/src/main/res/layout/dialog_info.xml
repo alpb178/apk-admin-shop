@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingRight="@dimen/margin_16"
+    android:paddingTop="@dimen/margin_10"
+    android:paddingBottom="@dimen/margin_10"
+    android:background="@drawable/box_dialog"
+    android:id="@+id/defaultDialog">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/defaultDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_information"
+            android:textColor="@color/md_grey_700"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_500"
+          android:id="@+id/lineaHorizontal"
+          android:layout_height="1dp"
+          android:layout_width="fill_parent"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/margin_8"/>
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_not_exists_email"
+        android:padding="@dimen/margin_16"
+        android:textColor="@color/md_grey_600"
+        android:textSize="14sp"/>
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="OK"/>
+</LinearLayout>

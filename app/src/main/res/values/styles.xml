@@ -1,0 +1,148 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:tabWidgetStyle">@style/CustomWidgetStyle</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="colorControlActivated">@color/md_blue_light_800</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomWidgetStyle" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidget</item>
+    </style>
+
+    <style name="CustomTabWidget" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="expandedCollapseToolbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TeamTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:tabWidgetStyle">@style/CustomWidgetStyle</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="colorControlActivated">@color/md_blue_light_800</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="SpinnerProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateDrawable">@anim/spinner</item>
+        <item name="android:minWidth">24dip</item>
+        <item name="android:maxWidth">24dip</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+
+    <style name="AppThemeStats" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_grey_700</item>
+        <item name="colorPrimaryDark">@color/md_grey_700</item>
+        <item name="colorAccent">@color/md_orange_700</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:tabWidgetStyle">@style/CustomWidgetStyle</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="colorControlActivated">@color/md_blue_light_900</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppThemeLeaders" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_green_800</item>
+        <item name="colorPrimaryDark">@color/md_green_800</item>
+        <item name="colorAccent">@color/md_grey_600</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:tabWidgetStyle">@style/CustomWidgetStyle</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="colorControlActivated">@color/md_blue_light_900</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppThemePremium" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_orange_deep_400</item>
+        <item name="colorPrimaryDark">@color/md_orange_deep_400</item>
+        <item name="colorAccent">@color/md_blue_light_800</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorHint">@color/md_grey_500</item>
+        <item name="android:tabWidgetStyle">@style/CustomWidgetStyle</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="colorControlActivated">@color/md_blue_light_900</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="scrollbar">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_vertical_track</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:scrollbarFadeDuration">2000</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+    </style>
+
+    <style name="scrollbarStats" parent="scrollbar">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_stats_vertical_thumb</item>
+    </style>
+
+    <style name="scrollbarPremium" parent="scrollbar">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_premium_vertical_thumb</item>
+    </style>
+
+    <style name="DetailsToolbarTitleTextAppearance" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="InOut.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+    <style name="AnimationDialog">
+        <item name="android:windowAnimationStyle">@style/InOut.Window</item>
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/login_splash"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/splash"
+            />
+    <EditText
+        android:drawableLeft="@drawable/ic_login_username"
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="5"
+        android:textSize="15dp"
+        android:hint="@string/login_username"
+        android:textColorHint="@color/background_grey"
+        android:textColor="@color/background_white"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:drawableLeft="@drawable/ic_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_username"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:hint="@string/login_password"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/background_grey"
+        android:textColor="@color/background_white"/>
+
+    <TextView
+        android:id="@+id/login_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/forget_password"
+        android:textSize="10dp"
+        android:textColor="@color/background_white"/>
+   <Button
+       android:id="@+id/btn_login"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="35dp"
+       android:layout_below="@id/login_forget_password"
+       android:layout_centerInParent="true"
+       android:background="@drawable/img_client_button_login"/>
+
+
+
+
+
+
+
+</RelativeLayout>

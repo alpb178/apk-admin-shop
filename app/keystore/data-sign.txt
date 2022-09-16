@@ -1,0 +1,2 @@
+alias: entuMovil Sign
+password: entuMovilAppSign
