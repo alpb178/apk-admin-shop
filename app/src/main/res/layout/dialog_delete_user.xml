@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAlexGoldCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_circular_shape"
+            android:spinnerMode="dropdown" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="2dp"
+            android:layout_below="@+id/txtInfo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/accept"
+                android:background="@drawable/rounded_circular_shape"
+                android:textColor="@color/background_white" />
+
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/btn_ok"
+                android:layout_toLeftOf="@+id/btn_ok"
+                android:gravity="center_vertical|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/rounded_circular_delete"
+                android:text="@string/cancel"
+                android:textColor="@color/background_white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

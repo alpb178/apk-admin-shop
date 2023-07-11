@@ -1,158 +1,11 @@
 <resources>
-    <string name="app_name">AlexGold-Cliente</string>
-    <string name="HOST">http://sn.inder.gob.cu/beisbol_isapi.dll/</string>
-    <string name="IMAGE_URL_NEWS">http://www.jit.cu/images/content/</string>
-    <string name="IMAGE_URL_HISTORY">http://www.beisbolcubano.cu/SNBeisbol/images/efemerides/</string>
-    <string name="IMAGE_URL_PALYER">http://www.beisbolcubano.cu/SNBeisbol/images/atletas/</string>
-    <string name="DEFAULT_PAGE_SIZE">50</string>
-    <string name="COUNT_ELEMENT_CACHE">15</string>
-    <string name="SUBCRIPTION_SHORT_NUMBER">8100</string>
-    <string name="SUBCRIPTION_KEYWORD">feedback snbapp</string>
-
-    <string name="app_description">La aplicación SNB entuMovil. Es una aplicación desarrollada por los Servicios entuMovil, perteneciente a la empresa Desoft.
-            \n\nEsta aplicación facilita a los aficionados al béisbol, usuarios de la telefonía móvil en Cuba, acceder de manera ágil y eficaz desde el celular a información de su interés relacionada
-            con indicadores principales de la lid beisbolera y otros datos importantes de actualidad y archivo del deporte nacional.</string>
+    <string name="app_name">AlexGold-Admin</string>
+    <string name="HOST">http://192.168.43.11:1337/api/</string>
+    <string name="HOST_Temp">https://strapi-production-66c8.up.railway.app/api/</string>
     <string name="app_exit_confirmation_message">¿Está seguro que desea salir?</string>
-    <string name="app_copyright_symbol">©</string>
-    <string name="app_copyright_start_year">2022</string>
-    <string name="app_copyright2">Todos los derechos reservados</string>
-    <string name="app_version_label">Versión</string>
-    <string name="app_version_name">2.0</string>
-    <string name="app_details_label">Descripción</string>
-    <string name="app_owner">entuMovil</string>
-
-    <string name="navigation_drawer_open">Abrir</string>
-    <string name="navigation_drawer_close">Cerrar</string>
-
-    <!-- Strings related to activities title -->
-    <string name="title_activity_premium">@string/menu_premiun</string>
-    <string name="title_activity_game_details">Detalles del juego</string>
-    <string name="title_activity_team">Equipo</string>
-    <string name="title_activity_news">Noticias</string>
-    <string name="title_activity_news_details">Detalles de la noticia</string>
-    <string name="title_activity_player">Jugador</string>
-    <string name="title_activity_stats_single">Estadísticas individuales</string>
-    <string name="title_activity_stats_collective">Estadísticas colectivas</string>
-    <string name="title_activity_stats_specialized">Estadísticas especializadas</string>
-    <string name="title_activity_stats_lifetime">Labor de por vida</string>
-    <string name="title_activity_history">Un día en la Historia</string>
-    <string name="title_activity_leaders">Líderes</string>
-    <string name="title_activity_record">Records SNB</string>
-    <string name="title_activity_lifetime">Labor de por vida</string>
-
-    <!-- Strings related to fragments -->
-    <string name="label_games_day_empty">No hay juegos programados</string>
-    <string name="label_tab_qualification">Posiciones</string>
-    <string name="label_tab_gameday">Juegos</string>
-    <string name="label_tab_favorites">Favoritos</string>
-    <string name="label_tab_visitor">Visitador</string>
-    <string name="label_tab_homeclub">Homeclub</string>
-    <string name="label_tab_details">Detalles</string>
-    <string name="label_tab_stats">Estadísticas</string>
-    <string name="label_tab_stats_hitting">Bateo</string>
-    <string name="label_tab_stats_pitching">Pitcheo</string>
-    <string name="label_tab_stats_fielding">Fildeo</string>
-    <string name="label_tab_record_serie">Serie</string>
-    <string name="label_tab_record_game">Juego</string>
-    <string name="label_tab_record_special">Especiales</string>
-    <string name="label_tab_stats_numbers">Numeritos</string>
-    <string name="message_games_prog">Para los Juegos Programados no existe información, para conocer mas detalles debe esperar a que el juego comience.</string>
-
-    <!-- String related to statistics -->
-    <string name="label_team">Equipo</string>
-    <string name="label_jj">JJ</string>
-    <string name="label_jg">JG</string>
-    <string name="label_jp">JP</string>
-    <string name="label_js">JS</string>
-    <string name="label_average">AVE</string>
-    <string name="label_average_op">AVE OP</string>
-    <string name="label_hits">H</string>
-    <string name="label_runs">CA</string>
-    <string name="label_runsimpulsed">CI</string>
-    <string name="label_runsallowed">CI</string>
-    <string name="label_cp">CP</string>
-    <string name="label_homeruns">HR</string>
-    <string name="label_obp">OBP</string>
-    <string name="label_ops">OPS</string>
-    <string name="label_ballkk">BB/K</string>
-    <string name="label_pcl">PCL</string>
-    <string name="label_whip">WHIP</string>
-    <string name="label_kkball">SO/BB</string>
-    <string name="label_ga">GA</string>
-    <string name="label_inn">INN</string>
-    <string name="label_o">O</string>
-    <string name="label_a">A</string>
-    <string name="label_e">E</string>
-    <string name="label_dp">DP</string>
-    <string name="label_ab">VB</string>
-    <string name="label_kk">SO</string>
-    <string name="label_ball">BB</string>
-    <string name="label_run">C</string>
-    <string name="label_team_all">Todos</string>
-    <string name="label_manager">Director</string>
-    <string name="label_cpr">CPR</string>
-    <string name="label_ccr">CCR</string>
-    <string name="label_babip">BABIP</string>
-    <string name="label_db">DB</string>
-    <string name="label_bbcb">BB CB</string>
-    <string name="label_h9">H 9</string>
-    <string name="label_bb9">BB 9</string>
-    <string name="label_so9">SO 9</string>
-    <string name="label_orderby">Ordenar por</string>
-
-    <!-- Strings for menu -->
+    <string name="label_games_day_empty">No hay datos para mostrar</string>
     <string name="menu_action_calendar">Fecha</string>
-    <string name="menu_contextual_players">Ver jugadores</string>
-    <string name="menu_contextual_favorite">Agregar a favoritos</string>
-    <string name="menu_news">Noticias</string>
-    <string name="menu_todayhistory">Efemérides</string>
-    <string name="menu_stats">Estadísticas especializadas</string>
-    <string name="menu_stats_single">Estadísticas individuales</string>
-    <string name="menu_stats_multiple">Estadísticas colectivas</string>
-    <string name="menu_fingerprint">Labor de por vida</string>
-    <string name="menu_record">Récords SNB</string>
-    <string name="menu_seat">Palco 8888</string>
-    <string name="menu_premiun">Zona Premium</string>
-    <string name="menu_help">Acerca de y Comentarios</string>
-    <string name="menu_liders">Líderes</string>
-
-    <!-- String related to premium page -->
-    <string name="txt_premium_explanation_fixed">Zona Premium le facilita acceso a  información privilegiada sobre la
-        Serie Nacional de Béisbol, un deporte rico en estadísticas y trayectoria deportiva,
-        récords y marcas… y otros esquemas y datos de igual interés para Ud.</string>
-    <string name="txt_premium_explanation_unsubscribe">Si Ud. no es miembro de nuestra exclusiva Zona Premium, es momento de suscribirse
-        por sólo 25 CUP de su saldo. Dicha suscripción le dará acceso a:</string>
-    <string name="txt_premium_explanation_stats">
-        En esta sesión podrás tener información de estadísticas especializadas conocidas como sabermetría y podrás mantenerte actualizado para cada jugador.
-    </string>
-
-    <!-- Strings general -->
-    <string name="action_add_favorite">Agregado a tus favoritos</string>
-    <string name="action_duplicate_favorite">Ya existe en tus favoritos</string>
-    <string name="action_remove_favorite">Eliminado de tus favoritos</string>
-    <string name="label_favorites_empty">No tienes favoritos</string>
-    <string name="label_no_more_data">No hay datos para mostrar</string>
-
-    <array name="teams_array">
-        <item>TODOS</item>
-        <item>ART</item>
-        <item>CAV</item>
-        <item>CFG</item>
-        <item>CMG</item>
-        <item>GRA</item>
-        <item>GTM</item>
-        <item>HOL</item>
-        <item>IJV</item>
-        <item>IND</item>
-        <item>LTU</item>
-        <item>MAY</item>
-        <item>MTZ</item>
-        <item>PRI</item>
-        <item>SCU</item>
-        <item>SSP</item>
-        <item>VCL</item>
-    </array>
-
+    <string name="DEFAULT_PAGE_SIZE">50</string>
     <string name="snb_service_started">snb.service.iniciado</string>
     <string name="snb_service_stopped">snb.service.detenido</string>
     <string name="snb_service_new_version">Nueva versión</string>
@@ -168,13 +21,94 @@
 
     <string name="message_not_exists_info">No existe información.</string>
     <string name="message_not_exists_history">No existen efemérides para hoy.</string>
-    <string name="message_timeout">Tiempo de conexión agotado.</string>
+    <string name="message_timeout">Tiempo de conexión agotado,Error en la conexión.</string>
     <string name="message_unexpected_error">Ha ocurrido un error inesperado.</string>
+    <string name="message_data_error">Error en los Datos.</string>
+
     <string name="message_not_exists_email">No existen cuentas de correo en su telefóno, por favor configure uno para poder suscribirse.</string>
 
     <string name="login_username">Usuario</string>
     <string name="login_password">Contraseña</string>
-    <string name="forget_password">Has olvidado la contraseña?</string>
+    <string name="repeat_password">Repetir Contraseña</string>
+    <string name="forget_password">¿Has olvidado la contraseña?</string>
+    <string name="login_account">¿No tienes cuenta aún?</string>
+    <string name="login_register"><u>Registrarse</u></string>
+    <string name="login_btn_register">Registrarse</string>
+    <string name="text_alex_gold_login">Iniciar Sesión</string>
+    <string name="text_alex_gold_buy">Comprar</string>
+    <string name="text_alex_gold_description">Descripción: </string>
+    <string name="text_alex_gold_large">Largo: </string>
+    <string name="text_alex_gold_weight">Peso: </string>
+    <string name="text_alex_gold_vendor">Vendedor: </string>
+    <string name="text_alex_gold_email">Correo: </string>
+    <string name="text_alex_gold_phone">Telefóno: </string>
+    <string name="text_alex_gold_rol">Rol:</string>
+    <string name="text_alex_gold_name">Nombre y Apellidos:</string>
+    <string name="text_alex_gold_login_username">Usuario:</string>
+    <string name="text_alex_gold_records">Historial \n Ventas</string>
+    <string name="text_alex_gold_settings">Ajustes</string>
+    <string name="text_alex_gold_profile">Perfil \n Usuario</string>
+    <string name="alex_gold_empty_data">No existen datos</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="sex">Sexo:</string>
+    <string name="age">Edad:</string>
+    <string name="count_sale">Cantidad de ventas</string>
+    <string name="required">Campo Requerido!</string>
+    <string name="required_length_password">El password debe tener un mínimo requerido de 6 caracteres</string>
+    <string name="required_password">las contraseñas deben ser iguales</string>
+    <string name="sale">+ Ventas</string>
+    <string name="man">Hombres</string>
+    <string name="woman">Mujer</string>
+    <string name="close_session">Cerrar Sesión</string>
+    <string name="select_vendor">Listados de Usuarios</string>
+
+    <string name="jewel_wait">Comprometida</string>
+    <string name="jewel_sale">Vendida</string>
+    <string name="count_pcs">pcs</string>
+    <string name="jewel_pending">Comprometer</string>
+    <string name="btn_jewel_update">Vendida</string>
+    <string name="btn_jewel_cancel">Cancelar</string>
+    <string name="jewel_to_buy">Prenda a Comprar</string>
+    <string name="count_jewel_pcs">Cantidad deseada:</string>
+    <string name="find_jewel">Buscar</string>
+    <string name="content_description" />
+    <string name="name_lastName">Nombre y Apellidos</string>
+    <string name="status_pending">Comprometidas</string>
+    <string name="sales">vendidas</string>
+    <string name="accept">ACEPTAR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="compromised">comprometida</string>
+    <string name="saled">vendida</string>
+    <string name="date_compromised">Fecha de comprometida: </string>
+    <string name="date_updated">Ultima actualización: </string>
+    <string name="date_buy">Fecha de Compra: </string>
+    <string name="cancel_buy">cancelar</string>
+    <string name="confirm_buy">confirmar</string>
+    <string name="code">Código</string>
+    <string name="insert_username">Buscar</string>
+    <string name="jewel_edit">editar</string>
+    <string name="jewel_eliminated">Eliminar</string>
+    <string name="administrator">Vista Administrador</string>
+    <string name="model">Modelo</string>
+    <string name="price">Precio</string>
+    <string name="carats">Kilates</string>
+    <string name="weight">Peso</string>
+    <string name="large">Largo</string>
+    <string name="jewel_available">Cantidad de las Joyas</string>
+    <string name="description">Descripción</string>
+    <string name="create_user">Crear Usuario</string>
+    <string name="create_jewel">Crear Joyas</string>
+    <string name="edit_jewel">Editar Joyas</string>
+    <string name="edit_user">Editar Usuario</string>
+    <string name="record_sale">Historial de Ventas</string>
 
 
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_favorites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="@color/colorAlexGoldBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/administrator"
+            android:textColor="@color/colorAlexGoldYellow"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button_admin_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_close" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_admin_user"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/relative_header"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_admin_vendor"/>
+
+    <ImageView
+        android:id="@+id/img_admin_vendor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_admin_user"
+        android:src="@drawable/ic_admin_user"/>/>
+
+    <ImageView
+        android:id="@+id/img_admin_jewel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/img_admin_vendor"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_admin_jewel"/>
+
+    <ImageView
+        android:id="@+id/img_admin_report"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/img_admin_jewel"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_admin_graphic"/>
+
+</RelativeLayout>

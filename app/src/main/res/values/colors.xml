@@ -85,8 +85,16 @@
 
     <!--calendar colors-->
     <color name="background_white">#FFFFFF</color>
+    <color name="background_icons">#FFFFFF</color>
     <color name="background_black">#000000</color>
+    <color name="background_list">#161616</color>
+    <color name="background_list_card">#4c4c41</color>
     <color name="background_grey">#424242</color>
 
+    <color name="colorAlexGoldYellow">#D19201</color>
+    <color name="colorAlexGoldWhite">#FFFFFF</color>
+    <color name="colorAlexGoldBackground">#1d1c1c</color>
+    <color name="colorAlexGoldCard">#171616</color>
+    <color name="colorAlexGoldPlaceHolder">#707070</color>
 
 </resources>

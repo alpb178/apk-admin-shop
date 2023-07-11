@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_favorites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="@color/colorAlexGoldBackground"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshAlexGoldList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/background_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_profile_record_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/text_profile_user_record"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Historial de Ventas del Usuario"
+                android:textColor="@color/colorAlexGoldYellow" />
+
+            <TextView
+                android:id="@+id/text_profile_vendor_wait"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_right"
+                android:text="@string/status_pending"
+                android:textColor="@color/background_white" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_alex_gold_list_wait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/background_black"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <TextView
+                android:id="@+id/text_profile_vendor_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_right"
+                android:text="@string/sales"
+                android:textSize="16dp"
+                android:textColor="@color/background_white" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_alex_gold_list_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:backgroundTint="@color/background_black"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -12,23 +12,25 @@
     <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"
+    <uses-permission
+        android:name="android.permission.ACCOUNT_MANAGER"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".SNBApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_apk"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="Instantiatable"
         tools:replace="android:icon">
         <activity
-            android:exported="true"
             android:name=".ui.activities.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
@@ -38,127 +40,77 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.AlexGoldLoginActivity"
+            android:name=".ui.activities.ActivityLogin"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.MainActivity"
+            android:name=".ui.activities.admin.DetailsUser"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.PremiumActivity"
-            android:label="@string/title_activity_premium"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.ActivityEditUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.GameDetailsActivity"
-            android:label="@string/title_activity_game_details"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.admin.ListVendor"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.TeamActivity"
-            android:label="@string/title_activity_team"
-            android:screenOrientation="portrait"
-            android:theme="@style/TeamTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.GameDetailsActivity" />
-        </activity>
+            android:name=".ui.activities.admin.CreateUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.NewsActivity"
-            android:label="@string/title_activity_news"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.admin.ListUserBlocked"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.NewsDetailsActivity"
-            android:label="@string/title_activity_news_details"
-            android:parentActivityName=".ui.activities.NewsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.NewsActivity" />
-        </activity>
+            android:name=".ui.activities.admin.CreateJewel"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.PlayerActivity"
-            android:label="@string/title_activity_player"
-            android:parentActivityName=".ui.activities.TeamActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.TeamActivity" />
-        </activity>
+            android:name=".ui.activities.admin.BuyAdminDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.StatsActivity"
-            android:label="@string/title_activity_stats_single"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemeStats">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.admin.Admin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.LifetimeActivity"
-            android:label="@string/title_activity_lifetime"
-            android:parentActivityName=".ui.activities.PremiumActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppThemePremium">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.PremiumActivity" />
-        </activity>
+            android:name=".ui.activities.admin.SalesHistorical"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".ui.activities.HistoryActivity"
-            android:label="@string/title_activity_history"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.ActivityListUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.LeadersActivity"
-            android:label="@string/title_activity_leaders"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:theme="@style/AppThemeLeaders">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.MainActivity" />
-        </activity>
+            android:name=".ui.activities.ActivitySalesDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.RecordActivity"
-            android:label="@string/title_activity_record"
-            android:parentActivityName=".ui.activities.PremiumActivity"
-            android:theme="@style/AppThemePremium">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="cu.entumovil.snb.ui.activities.PremiumActivity" />
-        </activity>
-        <receiver android:name=".service.NetworkReceiver"
-            android:label="NetworkConnection"
+            android:name=".ui.activities.ActivityListCatalog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ActivityProfileUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".service.NetworkReceiver"
             android:enabled="false"
-            android:exported="false">
+            android:exported="false"
+            android:label="NetworkConnection">
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
     </application>

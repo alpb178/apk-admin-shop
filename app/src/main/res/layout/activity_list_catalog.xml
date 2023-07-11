@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_favorites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorAlexGoldBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_alex_gold_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <EditText
+            android:id="@+id/text_find_alex_gold_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:hint="@string/find_jewel"
+            android:textColor="@color/background_white"
+            android:textColorHint="@color/colorAlexGoldPlaceHolder" />
+
+        <Button
+            android:id="@+id/fab_find_alex_gold_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:background="@mipmap/button_search_round"
+            />
+
+        <Button
+            android:id="@+id/fab_profile_alex_gold_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="@color/colorAlexGoldCard"
+            app:civ_border_width="2dp"
+            android:background="@mipmap/button_profile_round"/>
+
+        <Button
+            android:id="@+id/fab_admin_alex_gold_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            app:civ_border_color="@color/colorAlexGoldCard"
+            app:civ_border_width="2dp"
+            android:background="@mipmap/button_admin_round"/>
+
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text_find_alex_gold_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAlexGoldPlaceHolder"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:text="Bienvenido,Joan"/>
+
+        <Button
+            android:id="@+id/btn_create_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_welcome"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_circular_shape_transparent"
+            android:padding="10dp"
+            android:text="Agregar Joya"
+            android:textColor="@color/background_white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_Not_Jewel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/background_black"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/alex_gold_empty_data"
+            android:textColor="@color/md_grey_300"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshAlexGoldList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_alex_gold_list"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/background_black">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_alex_gold_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/background_black"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

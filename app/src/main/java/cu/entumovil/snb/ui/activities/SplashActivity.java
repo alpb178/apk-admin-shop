@@ -16,11 +16,14 @@ import cu.entumovil.snb.R;
 public class SplashActivity extends Activity {
 
     private static final long SPLASH_SCREEN_DELAY = 1000;
+    public static SplashActivity application;
+
+    public static String HOST;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        HOST = this.getString(R.string.HOST);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         if (Build.VERSION.SDK_INT < 16) {
@@ -31,7 +34,7 @@ public class SplashActivity extends Activity {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent().setClass(SplashActivity.this, AlexGoldLoginActivity.class);
+                Intent intent = new Intent().setClass(SplashActivity.this, ActivityLogin.class);
                 startActivity(intent);
                 finish();
             }

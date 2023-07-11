@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_user"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="18dp"
+    android:layout_marginRight="10dp"
+    android:backgroundTint="@color/colorAlexGoldCard"
+    android:elevation="25dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image_jewel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_profile_foreground"
+            app:civ_border_color="@color/colorAlexGoldBackground"
+            />
+
+            <TextView
+                android:id="@+id/text_name_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/name_lastName"
+                android:textColor="@color/background_white"
+                android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_200"
+        android:backgroundTint="@color/colorAlexGoldBackground" />
+
+</androidx.cardview.widget.CardView>
